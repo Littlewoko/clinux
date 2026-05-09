@@ -1,4 +1,4 @@
 # clinux
 Systems programming and trying stuff out.
 
-/lib has been copied from the "The Linux Programming Interface" examples source code for convenience
+much of this has been copied from "The linux programming interface" example source code which can be found at: https://www.man7.org/tlpi/
