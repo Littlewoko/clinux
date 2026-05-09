@@ -5,28 +5,7 @@
 #
 
 DIRS =	lib \
-	acl altio \
-	cap cgroups \
-	daemons dirs_links \
-	filebuff fileio filelock files filesys getopt \
-	inotify \
-	loginacct \
-	memalloc \
-	mmap \
-	pgsjc pipes pmsg \
-	proc proccred procexec procpri procres \
-	progconc \
-	psem pshm pty \
-	shlibs \
-	signals sockets \
-	svipc svmsg svsem svshm \
-	sysinfo \
-	syslim \
-	threads time timers tty \
-	users_groups \
-	vdso \
-	vmem \
-	xattr
+	offset
 
 # The "namespaces" and "seccomp" directories are deliberately excluded from
 # the above list because much of the code in those directories requires a

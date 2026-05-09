@@ -1,0 +1,11 @@
+The following sheel session log demonstrated the use of the program ./offset showing what happens when we attempt to read bytes from a file hole:
+
+$ touch tfile // create new empty file
+$ ./offset tfile s100000 wabc // seek to offset 100,000, write 'abc'
+s100000: seek succeeded
+wabc: wrote 3 bytes
+$ ls -l tfile
+-rw-r--r-- 1 mtk users 100003 <date> <time> tfile
+$ ./offset tfile s10000 R5 // seek to offset 10000, read 5 bytes from the hole
+s10000: seek succeeded
+R5: 00 00 00 00 00 // bytes in hold contain 0
