@@ -6,6 +6,7 @@ int main(int argc, char *argv[]) {
 	if (argc != 3) return 1;
 
 	int srcFd = open(argv[1], O_RDONLY);
+	// 0644 is owner read write, others read
 	int dstFd = open(argv[2], O_CREAT | OWRONLY | O_TRUNC, 0644);
 	off_t dataOff = 0, holeOff = 0, cur = 0;
 	char buf[4096];
